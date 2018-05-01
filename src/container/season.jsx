@@ -13,14 +13,36 @@ import '../assets/styles/season.css';
 const Option = Select.Option;
 
 class Seasons extends Component {
-  state = {
-    teamData: teamData,
-    selectedSeason: '2008',
-    filteredData: []
+  constructor(props) {
+    super(props);
+    this.loadState();
+  }
+
+  loadState = () => {
+    try {
+      const serializedState = localStorage.getItem('SeasonState');
+      if (serializedState != null) {
+        this.state = JSON.parse(serializedState);
+      } else {
+        this.state = {
+          teamData: teamData,
+          selectedSeason: '2008',
+          filteredData: []
+        };
+      }
+    } catch (err) {}
+  };
+
+  saveState = () => {
+    const serializedState = JSON.stringify(this.state);
+    try {
+      localStorage.setItem('SeasonState', serializedState);
+    } catch (err) {}
   };
 
   componentDidMount() {
     this.filterDataBySeason();
+    this.saveState();
   }
 
   filterDataBySeason = () => {
@@ -47,6 +69,7 @@ class Seasons extends Component {
                   onChange={value => {
                     this.setState({ selectedSeason: value }, () => {
                       this.filterDataBySeason();
+                      this.saveState();
                     });
                   }}
                 >

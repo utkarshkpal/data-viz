@@ -19,7 +19,9 @@ class App extends Component {
         <Layout>
           <Header className="header">
             <div className="logo">
-              <h1>IPL Dashboard</h1>
+              <Link to="/">
+                <h1>IPL Dashboard</h1>
+              </Link>
             </div>
             <Menu
               theme="dark"
