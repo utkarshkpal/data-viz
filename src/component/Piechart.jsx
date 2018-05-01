@@ -100,7 +100,7 @@ class CustomPieChart extends Component {
   render() {
     const { filteredData } = this.props;
     return (
-      <PieChart width={1600} height={800}>
+      <PieChart width={800} height={400}>
         <Pie
           activeIndex={this.state.activeIndex}
           activeShape={renderActiveShape}

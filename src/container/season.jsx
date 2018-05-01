@@ -29,26 +29,6 @@ class Seasons extends Component {
     });
     this.setState({ filteredData });
   };
-  // static getDerivedStateFromProps(nextProps) {
-  //   console.log(nextProps);
-  //   console.log('getDerivedStateFromProps');
-  // }
-
-  // filterData = () => {
-  //   const toremove = [
-  //     'toss_wins',
-  //     'toss_win_bat_first',
-  //     'toss_win_field_first',
-  //     'bat_first_win_match',
-  //     'field_first_win_match'
-  //   ];
-  //   teamData.map(elem => {
-  //     return toremove.forEach(remove => {
-  //       delete elem[remove];
-  //     });
-  //   });
-  //   return teamData;
-  // };
 
   render() {
     return (
@@ -56,26 +36,31 @@ class Seasons extends Component {
         <Row style={{ MarginBottom: '25px' }}>
           <Col span={24}>
             <div className="head">
-              <span className="select">Select Season </span>
-              <Select
-                defaultValue="2008"
-                style={{ width: 120 }}
-                onChange={value => {
-                  this.setState({ selectedSeason: value }, () => {
-                    this.filterDataBySeason();
-                  });
-                }}
-              >
-                <Option value="2008">Season 1</Option>
-                <Option value="2009">Season 2</Option>
-                <Option value="2010">Season 3</Option>
-                <Option value="2011">Season 4</Option>
-                <Option value="2012">Season 5</Option>
-                <Option value="2013">Season 6</Option>
-                <Option value="2014">Season 7</Option>
-                <Option value="2015">Season 8</Option>
-                <Option value="2016">Season 9</Option>
-              </Select>
+              <span>
+                <h2>Season wise Analysis</h2>
+              </span>
+              <span>
+                <span className="select">Select Season </span>
+                <Select
+                  defaultValue="2008"
+                  style={{ width: 120 }}
+                  onChange={value => {
+                    this.setState({ selectedSeason: value }, () => {
+                      this.filterDataBySeason();
+                    });
+                  }}
+                >
+                  <Option value="2008">Season 1</Option>
+                  <Option value="2009">Season 2</Option>
+                  <Option value="2010">Season 3</Option>
+                  <Option value="2011">Season 4</Option>
+                  <Option value="2012">Season 5</Option>
+                  <Option value="2013">Season 6</Option>
+                  <Option value="2014">Season 7</Option>
+                  <Option value="2015">Season 8</Option>
+                  <Option value="2016">Season 9</Option>
+                </Select>
+              </span>
             </div>
           </Col>
         </Row>
