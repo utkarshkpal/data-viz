@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Row, Col, Select } from 'antd';
 
-import Linechart from '../component/Linechart';
+import Linechart from '../components/Linechart';
 
 const Option = Select.Option;
 

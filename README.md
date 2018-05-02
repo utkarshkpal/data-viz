@@ -2,7 +2,10 @@
 
 A data visualization app for analysing and visualising various aspects of the Indian Premier League by making use of [this dataset.](https://www.kaggle.com/harsha547/indian-premier-league-csv-dataset)
 
-Working Demo : [here.](https://samarthtambad.github.io/ipl-dash/#/)
+#Locally run
+
+git clone https://github.com/utkarshkpal/data-viz.git
+cd
 
 ## List of Frameworks/Libraries used
 

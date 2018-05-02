@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Row, Col, Select, Table } from 'antd';
 import batsmenData from '../assets/data/json/batsmen';
-import SimpleBarChart from '../component/SimpleBarChart';
+import SimpleBarChart from '../components/SimpleBarChart';
 const Option = Select.Option;
 
 class batsmen extends Component {

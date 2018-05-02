@@ -6,7 +6,7 @@ import { Select } from 'antd';
 import seasonList from '../assets/data/json/season_list.json';
 import teamData from '../assets/data/json/match_team.json';
 import { Menu, Dropdown } from 'antd';
-import PieChart from '../component/Piechart';
+import PieChart from '../components/Piechart';
 
 import '../assets/styles/season.css';
 
