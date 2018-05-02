@@ -2,10 +2,7 @@
 
 A data visualization app for analysing and visualising various aspects of the Indian Premier League by making use of [this dataset.](https://www.kaggle.com/harsha547/indian-premier-league-csv-dataset)
 
-#Locally run
-
-git clone https://github.com/utkarshkpal/data-viz.git
-cd
+Working Demo : [here](https://ipl-data-viz.herokuapp.com/)
 
 ## List of Frameworks/Libraries used
 
