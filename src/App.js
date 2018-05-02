@@ -59,17 +59,10 @@ class App extends Component {
                   minHeight: 280
                 }}
               >
+                <Route exact path="/" component={Seasons} />
+                <Route path="/batsmen" component={BatsmenWise} />
                 <Route
-                  exact
-                  path={process.env.PUBLIC_URL + '/'}
-                  component={Seasons}
-                />
-                <Route
-                  path={process.env.PUBLIC_URL + '/batsmen'}
-                  component={BatsmenWise}
-                />
-                <Route
-                  path={process.env.PUBLIC_URL + '/wins'}
+                  path="/wins"
                   render={() => <TeamWise data={teamData} />}
                 />
               </Content>

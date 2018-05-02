@@ -2,7 +2,6 @@
   "name": "ipl-dashboard",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://utkarshkpal.github.io/data-viz",
 
   "dependencies": {
     "antd": "^3.4.4",
